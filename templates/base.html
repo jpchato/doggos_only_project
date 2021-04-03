@@ -29,11 +29,14 @@
         Doggos Only
     </header>
     <nav>
-        <a href="">Home</a>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'dog_images' %}">Dog Images</a>
     </nav>
     {% block content %}
     {% endblock %}
     <footer>
-        <a href="">Donate</a>
+        <a href="https://www.linkedin.com/in/jessepena4/">LinkedIn</a>
+        <a href="https://github.com/jpchato">GitHub</a>
+        <a href="https://twitter.com/jpchato">Twitter</a>
     </footer>
 </body>

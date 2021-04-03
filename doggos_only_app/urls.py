@@ -6,7 +6,8 @@ from .views import *
 
 urlpatterns = [
     path('', views.home, name='home'),
-    path('dog_images', views.display_images, name='dog_images')
+    path('dog_images', views.display_images, name='dog_images'),
+    path('<int:pk>', views.DogDetailView.as_view(), name='dog_detail')
     ]
 
 if settings.DEBUG:

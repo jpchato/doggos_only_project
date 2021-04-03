@@ -3,8 +3,7 @@
 {% block content %}
 {% for dog in dog_images %}
 <div>
-    <h4>{{ dog.dog_name }}</h4>
-    <p>{{ dog.dog_size }}</p>
+    <a href="{% url 'dog_detail' dog.id %}">{{ dog.dog_name }}</a>
     <img src="{{ dog.dog_picture.url }}" />
 </div>
 {% endfor %}

@@ -9,7 +9,7 @@ def home(request):
         if form.is_valid():
             form.save()
             plural_dog = Dog.objects.all()
-            return render(request, 'doggos_only_app/home.html', {'dog_images' : plural_dog})
+            return render(request, 'doggos_only_app/dog_images.html', {'dog_images' : plural_dog})
     else:
         form = DogForm()
     return render(request, 'doggos_only_app/home.html', {'form' : form})

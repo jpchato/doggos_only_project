@@ -3,8 +3,9 @@
 {% block content %}
 {% for dog in dog_images %}
 <div>
-    <li>{{ dog.dog_name }}</li>
-    <li>{{ dog.dog_size }}</li>
+    <h4>{{ dog.dog_name }}</h4>
+    <p>{{ dog.dog_size }}</p>
+    <img src="{{ dog.dog_picture.url }}" />
 </div>
 {% endfor %}
 {% endblock %}

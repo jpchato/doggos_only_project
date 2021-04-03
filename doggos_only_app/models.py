@@ -9,6 +9,7 @@ SIZE = (
     ('hecca big boi', 'hecca big boi')
 )
 class Dog(models.Model):
+    dog_picture = models.ImageField(upload_to = 'images/', default = None)
     dog_name = models.CharField(max_length = 40)
     class Size(models.TextChoices):
         SMALL = 'Small',

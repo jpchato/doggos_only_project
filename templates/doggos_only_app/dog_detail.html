@@ -1,7 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1>{{ dog.dog_name }}</h1>
-<img src="{{ dog.dog_picture.url }}" /> 
+<section>
+    <h1>{{ dog.dog_name }}</h1>
+    <img src="{{ dog.dog_picture.url }}" /> 
+    <p> {{ dog.dog_size }} </p>
+    <p> {{ dog.demeanor }} </p>
+    <p> {{ dog.city }}, <p> {{ dog.state }} </p> </p>
+</section>
 
 {% endblock %}

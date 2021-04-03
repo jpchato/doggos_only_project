@@ -21,6 +21,22 @@ class Dog(models.Model):
         null = True,
         max_length = 255
     )
+    class Demeanor(models.TextChoices):
+        PLAYFUL = 'Playful',
+        NERVOUS = 'Nervous',
+        ANXIOUS = 'Anxious',
+        EXCITABLE = 'Excitable',
+        PATIENT = 'Patient',
+        AGGRESSIVE = 'Aggressive',
+    demeanor = models.CharField(
+        choices = Demeanor.choices,
+        blank = True,
+        null = True,
+        max_length = 255
+    )
+    city = models.CharField(max_length = 100, default = None)
+    state = models.CharField(max_length = 100, default = None)
+
 
     def __str__(self):
         return self.dog_name

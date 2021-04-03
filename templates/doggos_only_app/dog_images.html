@@ -2,7 +2,7 @@
 
 {% block content %}
 {% for dog in dog_images %}
-<div>
+<div id='dog_div'>
     <a href="{% url 'dog_detail' dog.id %}">{{ dog.dog_name }}</a>
     <img src="{{ dog.dog_picture.url }}" />
 </div>

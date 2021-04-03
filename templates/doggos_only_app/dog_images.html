@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% for dog in dog_images %}
+<div>
+    <li>{{ dog.dog_name }}</li>
+    <li>{{ dog.dog_size }}</li>
+</div>
+{% endfor %}
+{% endblock %}

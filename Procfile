@@ -1,0 +1,1 @@
+web: gunicorn doggos_only_project.wsgi --log-file -

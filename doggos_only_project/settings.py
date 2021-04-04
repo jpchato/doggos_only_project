@@ -26,7 +26,7 @@ SECRET_KEY = '8r8&vxas1ky&&fo(*#k@2eusq31y+ht*muy_!5+_)q9fnvn#+j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['doggos_only_project.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['doggos-only.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
